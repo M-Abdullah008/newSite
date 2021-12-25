@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="resto.css">
+    <link rel="stylesheet" type="text/css" href="all.min.css">
+</head>
+<body>
+    
+<header>
+    <a href="#" class="logo"><i class="fas fa-utensils"></i>resto.</a>
+
+    <nav class="navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#dishes">Dishes</a>
+        <a href="#about">About</a>
+        <a href="#menus">Menus</a>
+        <a href="#review">Review</a>
+        <a href="#order">Order</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart" id="cartIcon">
+            <span class="cart-total">0</span>
+        </a>
+    </div>
+
+</header>
+
+<form action="" id="search-form">
+    <input type="search" placeholder="search here.." id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+</form>
+
+<div id="shopCart">
+    <h3 id="cart_close">&times</h3>
+    <div id="cartTop">
+        <h3>Your Cart</h3>
+    </div>
+    <div id="append">
+        <!-- <div id="mainappend">
+            <div id="cartMiddle">
+                <div id="imageNamePrice">
+                    <div id="cartImage">
+                        <img src="image/apple.png">
+                    </div>
+                    <div id="namePrice">
+                        <p>Apple</p>
+                        <h3> $ 100 </h3>
+                        <button>Remove</button>
+                    </div>
+                </div>
+                <div id="fontAwesome">
+                    <i class="fas fa-chevron-up"></i>
+                    <p>2</p>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            <p id="total">Cart Total : $ <span>100</span></p>
+        </div> -->
+    </div>
+    <div id="cartBottom">
+        <button>Clear Cart</button>
+        <button>Proceed to checkout</button>
+    </div>
+</div>
+
+
+<!-- home section -->
+
+<section class="home" id="home">
+
+<div class="swiper home-slider">
+<div class="swiper-wrapper wrapper">
+
+<div class="swiper-slide slide">
+    <div class="content">
+        <span>special dishes: </span>
+        <h3>Italian Pizza</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#" class="btn">Order now</a>
+        </div>
+<div class="pizzas">
+<img src="pizza.jpg" alt="">
+</div>
+</div>
+
+<div class="swiper-slide slide">
+    <div class="content">
+        <span>special dishes: </span>
+        <h3>delicious noodles</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#" class="btn">Order now</a>
+        </div>
+    <div class="noodles">
+    <img src="noodles.jpg" alt="">
+    </div>
+</div>
+    
+
+<div class="swiper-slide slide">
+        <div class="content">
+            <span>special dishes: </span>
+            <h3>fried-chicken</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn">Order now</a>
+            </div>
+        <div class="chicken">
+        <img src="fried-chicken.jpg" alt="">
+        </div>
+    </div>
+        
+        
+</div>
+
+</div>
+
+<div class="swiper-pagination"></div>
+</div>
+
+</section>
+
+<!-- home section -->
+
+<section class="dishes" id="dishes">
+    <h3 class="sub-heading">Our dishes</h3>
+    <h1 class="heading">popular dishes</h1>
+    <div class="box-container">
+        <div class="box" id="01">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="burger.jpg" alt="" width="60%" height="60%">
+
+            <h3 id="itemName">Burger</h3>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span id="itemPrice">$15.99</span>
+            <a href="#" class="btn" id="add_to_cart">Add to cart</a>
+        </div>
+
+        <div class="box" id="02">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="roll.jpg" alt="" width="60%" height="60%">
+
+            <h3 id="itemName">Roll</h3>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span id="itemPrice">$15.99</span>
+            <a href="#" class="btn" id="add_to_cart">Add to cart</a>
+        </div>
+
+        <div class="box" id="03">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="sandwich.jpg" alt="" width="60%" height="55%">
+
+            <h3 id="itemName">Sandwich</h3>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span id="itemPrice">$15.99</span>
+            <a href="#" class="btn" id="add_to_cart">Add to cart</a>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="roll.jpg" alt="" width="60%" height="60%">
+
+            <h3>delicious food</h3>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>$15.99</span>
+            <a href="#" class="btn">Add to cart</a>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="burger.jpg" alt="" width="60%" height="60%">
+
+            <h3>delicious food</h3>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>$15.99</span>
+            <a href="#" class="btn">Add to cart</a>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="roll.jpg" alt="" width="60%" height="60%">
+
+            <h3>delicious food</h3>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>$15.99</span>
+            <a href="#" class="btn">Add to cart</a>
+        </div>
+    </div>
+</section>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="shopCart.js"></script>
+<script src="resto.js"></script>
+
+</body>
+</html>
