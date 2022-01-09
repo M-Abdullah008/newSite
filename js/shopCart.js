@@ -81,9 +81,9 @@
 						</div>
 					</div>
 					<div id="fontAwesome" class="${[item[0], item[3]]}">
-						<i class="fas fa-chevron-up p-3 bg-success"></i>
+						<i class="fas fa-chevron-up p-3 btn m-0 fs-5" style="background-color:#E75B1E"></i>
 						<p id="cart_qty" class="fs-4 m-0">${item[4]}</p>
-						<i class="fas fa-chevron-down p-3 bg-success"></i>
+						<i class="fas fa-chevron-down p-3 btn m-0 fs-5" style="background-color:#E75B1E"></i>
 					</div>
 				</div>`
 			});
