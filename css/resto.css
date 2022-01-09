@@ -67,6 +67,7 @@ header .logo i{
 
 header .navbar a{
     font-size: 1.7rem;
+    text-decoration: none;
     border-radius: .5rem;
     padding: .5rem 1.5rem;
     color: var(--light-color);
@@ -87,6 +88,7 @@ header .icons a{
     width: 4.5rem;
     line-height: 4.5rem;
     font-size: 1.7rem;
+    text-decoration: none;
     text-align: center;
     color: var(--black);
     border-radius: 50%;
@@ -186,7 +188,7 @@ width: 100%;
 }
 
 #shopCart{
-    background: #F1F3F4;
+    background: #D3D0CB;
     width: 40%;
     position: fixed;
     z-index: 1002;

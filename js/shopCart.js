@@ -71,23 +71,23 @@
 			cart_data[2].forEach(function(item){
 				html += `<div id="cartMiddle">
 					<div id="imageNamePrice">
-						<div id="cartImage">
-							<img src="${item[1]}">
+						<div id="cartImage" style="width: 105px; overflow:hidden;">
+							<img src="${item[1]}" style="transform: scale(1.3);">
 						</div>
 						<div id="namePrice">
-							<p>${item[2]}</p>
+							<p class="fs-3">${item[2]}</p>
 							<h3> $ ${item[3]} </h3>
-							<button>Remove</button>
+							<button class="btn btn-danger fs-6">Remove</button>
 						</div>
 					</div>
 					<div id="fontAwesome" class="${[item[0], item[3]]}">
-						<i class="fas fa-chevron-up"></i>
-						<p id="cart_qty">${item[4]}</p>
-						<i class="fas fa-chevron-down"></i>
+						<i class="fas fa-chevron-up p-3 bg-success"></i>
+						<p id="cart_qty" class="fs-4 m-0">${item[4]}</p>
+						<i class="fas fa-chevron-down p-3 bg-success"></i>
 					</div>
 				</div>`
 			});
-			html += `<p id="total">Cart Total : $ <span>${cart_data[1]}</span></p>
+			html += `<p id="total" class="fs-3">Cart Total : $ <span>${cart_data[1]}</span></p>
 			</div>`;
 			return html;
 		}
